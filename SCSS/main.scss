@@ -71,6 +71,13 @@ header {
                 border: none;
                 border-radius: 5px;
                 background: i.$btnBg;
+                color: i.$pri-c;
+            }
+            button:hover{
+                background: i.$pri-c;
+                color: black;
+                border-radius: 5px;
+                border: 1px solid #351EE0;
             }
         }
     }
@@ -123,5 +130,80 @@ header {
         .cardImg {
             background: linear-gradient(91deg, #351EE0 0%, #3F74EF 100%);
         }
+    }
+}
+
+.cumber {
+    max-width: i.$w;
+    margin: auto;
+    background: i.$pri-c;
+
+    .cumberBg {
+
+        .bgc {
+            position: relative;
+            @include i.cumber;
+
+            .bg3 {
+                position: absolute;
+            }
+        }
+    }
+
+    .side {
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+
+            .span {
+                color: #351EE0;
+            }
+        }
+
+        button {
+            padding: 20px 30px;
+            border-radius: 5px;
+            border: 1px solid #351EE0;
+            
+        }
+        button:hover{
+            background: i.$btnBg;
+        }
+    }
+}
+
+.footer{
+    position: relative;
+    background: #05092B;
+    color: i.$pri-c;
+    .foot{
+        max-width: i.$w;
+        margin: auto;
+        .m{
+            color: i.$pri-c;
+            margin-bottom: 0 !important;
+            margin-left: i.$m10;
+        }
+        .f{
+            margin-bottom: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+    .w{
+        max-width: i.$w;
+        margin: auto;
+    }
+    .foot2{
+        max-width: i.$w;
+        margin: auto;
+    }
+    .footimg{
+        position: absolute;
+        top: 0;
+    }
+    .footimg2{
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
