@@ -10,9 +10,19 @@ header {
             max-width: i.$w;
             margin: auto;
 
-            .col-8 {
-                .headu {
-                    margin-bottom: 0 !important;
+            .ul1 {
+                ul {
+                    li {
+                        margin-right: i.$m30;
+                    }
+                }
+
+                .d {
+                    padding-left: 0 !important;
+
+                    .headu {
+                        margin-bottom: 0 !important;
+                    }
                 }
             }
 
@@ -23,7 +33,7 @@ header {
             }
 
             .headl {
-                margin-right: i.$m25;
+                margin-right: i.$m20;
             }
         }
     }
@@ -81,11 +91,37 @@ header {
             .bhead {
                 font-size: i.$s74;
             }
-            p{
-                .bimg{
-                    width: 16px;
+
+            p {
+                .bimg {
+                    width: 10px;
+                    height: 10px;
                 }
             }
+        }
+    }
+}
+
+.card-group {
+    max-width: i.$w;
+    margin: auto;
+
+    .item {
+        border-radius: 5px;
+        background: i.$pri-c;
+        box-shadow: i.$box;
+
+        .cardImg {
+            background: #F9F9F9;
+            padding: 30px;
+            border-radius: 100%;
+            transition: 0.4s;
+        }
+    }
+
+    .item:hover {
+        .cardImg {
+            background: linear-gradient(91deg, #351EE0 0%, #3F74EF 100%);
         }
     }
 }
