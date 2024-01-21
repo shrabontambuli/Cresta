@@ -31,26 +31,32 @@ header {
     .head2 {
         max-width: i.$w;
         margin: auto;
-        .m2{
+
+        .m2 {
             margin-left: i.$s30;
-            .m{
+
+            .m {
                 margin-bottom: 0 !important;
                 margin-left: i.$m;
                 font-size: i.$s30;
                 font-weight: 700;
             }
         }
-        .col-7{
+
+        .col-7 {
             margin-bottom: 0 !important;
-            ul{
+
+            ul {
                 margin-bottom: 0 !important;
-                li{
+
+                li {
                     margin-bottom: 0 !important;
                 }
             }
         }
-        .col-3{
-            button{
+
+        .col-3 {
+            button {
                 padding: 10px 30px;
                 border: none;
                 border-radius: 5px;
@@ -59,4 +65,27 @@ header {
         }
     }
 
+}
+
+.banner {
+    @include i.bannerbg;
+
+    .bg2 {
+        background: i.$bannerbgc;
+        height: 440px;
+        opacity: 0.5;
+
+        .banner-t {
+            color: i.$pri-c;
+
+            .bhead {
+                font-size: i.$s74;
+            }
+            p{
+                .bimg{
+                    width: 16px;
+                }
+            }
+        }
+    }
 }
