@@ -1,0 +1,62 @@
+@forward "./base/reset";
+@use "./utils/index.scss" as i;
+
+
+header {
+    .headbg {
+        background: i.$headbg;
+
+        .head {
+            max-width: i.$w;
+            margin: auto;
+
+            .col-8 {
+                .headu {
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .headp {
+                margin-bottom: 0 !important;
+                margin-left: i.$m;
+                margin-right: i.$m;
+            }
+
+            .headl {
+                margin-right: i.$m25;
+            }
+        }
+    }
+
+    .head2 {
+        max-width: i.$w;
+        margin: auto;
+        .m2{
+            margin-left: i.$s30;
+            .m{
+                margin-bottom: 0 !important;
+                margin-left: i.$m;
+                font-size: i.$s30;
+                font-weight: 700;
+            }
+        }
+        .col-7{
+            margin-bottom: 0 !important;
+            ul{
+                margin-bottom: 0 !important;
+                li{
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        .col-3{
+            button{
+                padding: 10px 30px;
+                border: none;
+                border-radius: 5px;
+                background: i.$btnBg;
+            }
+        }
+    }
+
+}
